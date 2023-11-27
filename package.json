@@ -4,5 +4,8 @@
     "async": "^3.2.5",
     "fs-js": "^1.0.6",
     "path": "^0.12.7"
+  },
+  "bin": {
+    "getDirectorySize": "bin/getDirectorySize.js"
   }
 }
