@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log('Hi!');
+import getDirectorySize from 'getDirectorySize';
