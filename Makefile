@@ -15,3 +15,6 @@ lint-fix:
 
 update-deps:
 	npx ncu -u
+
+publish:
+	npm publish --dry-run
