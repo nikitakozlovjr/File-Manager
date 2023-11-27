@@ -7,5 +7,15 @@
   },
   "bin": {
     "getDirectorySize": "bin/getDirectorySize.js"
-  }
+  },
+  "name": "file-manager",
+  "description": "Вы можете самостоятельно протестировать работу файлового менеджера. В каталоге *src* находятся файлы js. Каждый файл - отдельная программа, решающая определенные задачи.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
