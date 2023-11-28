@@ -16,5 +16,3 @@ export default (dirpath) => {
     getDirectorySize(dirpath).then((result) => console.log(result))
                              .catch((err) => console.log(`Error!\n${err}`));
 }
-
-// getDirectorySize('../__fixtures__').then((result) => console.log(result));
