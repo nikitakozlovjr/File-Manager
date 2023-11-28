@@ -7,7 +7,8 @@
     "path": "^0.12.7"
   },
   "bin": {
-    "getDirectorySize": "bin/getDirectorySize.js"
+    "getDirectorySize": "bin/getDirectorySize.js",
+    "watch": "bin/watch.js"
   },
   "name": "file-manager",
   "description": "Вы можете самостоятельно протестировать работу файлового менеджера. В каталоге *src* находятся файлы js. Каждый файл - отдельная программа, решающая определенные задачи.",
