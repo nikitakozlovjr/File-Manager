@@ -1,29 +1,36 @@
 # File-Manager
-### Примечания
+### Description
+____
 
-Вы можете самостоятельно протестировать работу файлового менеджера. В каталоге *src* находятся файлы js. Каждый файл - отдельная программа, решающая определенные задачи.
+This file manager module provides functions for quickly working with files thanks to asynchronous work with them. The file manager includes the following features:
+- print 
+- write 
+- move
+- getDirectorySize
 
-Для использования модуля, достаточно вызвать в файле *index.js* функцию и передать в нее ожидаемые параметры:
-
-```bash
-node index.js
-```
-
-## Модуль print
-
-Данный модуль сожержит функцию `move()`, которая принимает один аргумент, который должен являться названием файла и выводить на экран содержимое этого файла.
-
-**Параметры**
-
-- название файла, а функция уже сама построит до него путь
-
-
-```javascript
-move('file1.txt'); // Это файл под номером 1
-move('file2.txt'); // Это файл под номером 2
+To start working with this module, clone the repository `git clone` and run the command
 
 ```
+make install
+```
 
-После использования данной функции, файлы не изменяются, они только читаются.
+## Module getDirectorySize
 
-## Модуль write
+### Description
+
+___
+
+This function calculates the size of the passed directory. The function only counts the size of files nested in it, without taking into account other directories nested in it.
+
+
+### Startup instructions
+___
+
+The function **getDirectorySize** is an executable file, so to use it you just need to issue the following command and pass as an argument the relative path to the directory whose size you want to know
+
+```
+getDirectorySize __fixtures__
+```
+
+### Example of work
+[![asciicast](https://asciinema.org/a/eX08BXJ3EjCY5YLGseUPG8dZV.svg)](https://asciinema.org/a/eX08BXJ3EjCY5YLGseUPG8dZV)
