@@ -57,3 +57,5 @@ The function **watch** provides an executable file that takes three arguments in
 watch __fixtures__/file1.txt 500 10000
 ```
 
+### Example of work
+[![asciicast](https://asciinema.org/a/fU0IKKB3Jk9oElv0cvqyuWirP.svg)](https://asciinema.org/a/fU0IKKB3Jk9oElv0cvqyuWirP)
