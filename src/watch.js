@@ -1,7 +1,7 @@
 import fsp from 'fs/promises';
 import _ from 'lodash';
 
-const watch = async (filepath, interval) => {
+const watch = async (filepath, interval, timeWork) => {
     let lastcheck = Date.now();
     let filepathSize = await fsp.stat(filepath).then((stats) => stats.size).catch((err) => {
         throw new Error('Error in retrieving file information\n', err)
@@ -15,10 +15,7 @@ const watch = async (filepath, interval) => {
         }
     }), interval);
 
-    return id;
+    setTimeout(() => clearInterval(id), timeWork)
 };
 
-export default (filepath, interval, timeWork) => {
-    const id = watch(filepath, interval).then((result) => result).catch((e) => console.log(e));
-    setTimeout(() => clearInterval(id), timeWork);
-};
+export default watch;
