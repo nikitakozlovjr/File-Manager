@@ -45,3 +45,15 @@ ___
 This function monitors a file and tracks changes in it at a specified time interval. If changes occur, informs the user and calculates changes in file size
 
 
+### Startup instructions
+___
+
+The function **watch** provides an executable file that takes three arguments in the specific sequence shown below. Accepted Arguments
+- path to the file
+- time interval of checks
+- observation operating time
+
+```
+watch __fixtures__/file1.txt 500 10000
+```
+
