@@ -7,6 +7,7 @@ This file manager module provides functions for quickly working with files thank
 - write 
 - move
 - getDirectorySize
+- watch
 
 To start working with this module, clone the repository `git clone` and run the command
 
@@ -34,3 +35,13 @@ getDirectorySize __fixtures__
 
 ### Example of work
 [![asciicast](https://asciinema.org/a/eX08BXJ3EjCY5YLGseUPG8dZV.svg)](https://asciinema.org/a/eX08BXJ3EjCY5YLGseUPG8dZV)
+
+## Module watch
+
+### Description
+
+___
+
+This function monitors a file and tracks changes in it at a specified time interval. If changes occur, informs the user and calculates changes in file size
+
+
