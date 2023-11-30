@@ -1,10 +1,6 @@
 import fsp from 'fs/promises';
-import path from 'path';
 
-const move = (outfile, intofile) => {
-    const [outfilepath, intofilepath] = [outfile, intofile]
-        .map((file) => path.join('../__fixtures__', file));
-    
+const move = (outfilepath, intofilepath) => {
     return fsp.readFile(outfilepath, 'utf-8')
         .then((data) => fsp.writeFile(intofilepath, data)
             .then(() => fsp.unlink(outfilepath)
