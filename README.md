@@ -128,8 +128,32 @@ The function **write** takes two arguments as input in strict sequence
 - data
 
 ```
-write __fixtures__/file1 Hello, world!
+write __fixtures__/file1.txt Hello, world!
 ```
 
 ### Example of work
 [![asciicast](https://asciinema.org/a/uoqa3uWCZeFdAcyumog30SHZ6.svg)](https://asciinema.org/a/uoqa3uWCZeFdAcyumog30SHZ6)
+
+## Module write
+
+### Description
+
+___
+
+:warning: **Be careful when using this module**: This module can mutate the file system (changing file data)!
+
+This module reverses (rewrites in reverse order) the data of the transferred file
+
+
+### Startup instructions
+___
+
+The function **reverse** takes one single argument
+- relative path to the file
+
+```
+reverse __fixtures__/file2.txt
+```
+
+### Example of work
+[![asciicast](https://asciinema.org/a/HtI1UKqeQkk33L027rTN8Lwgz.svg)](https://asciinema.org/a/HtI1UKqeQkk33L027rTN8Lwgz)
