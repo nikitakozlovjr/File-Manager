@@ -11,7 +11,8 @@
     "watch": "bin/watch.js",
     "move": "bin/move.js",
     "print": "bin/print.js",
-    "write": "bin/write.js"
+    "write": "bin/write.js",
+    "reverse": "bin/reverse.js"
   },
   "name": "file-manager",
   "description": "Вы можете самостоятельно протестировать работу файлового менеджера. В каталоге *src* находятся файлы js. Каждый файл - отдельная программа, решающая определенные задачи.",
