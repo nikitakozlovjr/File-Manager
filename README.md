@@ -34,6 +34,7 @@ getDirectorySize __fixtures__
 ```
 
 ### Example of work
+
 [![asciicast](https://asciinema.org/a/eX08BXJ3EjCY5YLGseUPG8dZV.svg)](https://asciinema.org/a/eX08BXJ3EjCY5YLGseUPG8dZV)
 
 ## Module watch
@@ -58,6 +59,7 @@ watch __fixtures__/file1.txt 500 10000
 ```
 
 ### Example of work
+
 [![asciicast](https://asciinema.org/a/fU0IKKB3Jk9oElv0cvqyuWirP.svg)](https://asciinema.org/a/fU0IKKB3Jk9oElv0cvqyuWirP)
 
 ## Module print
@@ -66,22 +68,21 @@ watch __fixtures__/file1.txt 500 10000
 
 ___
 
-This function monitors a file and tracks changes in it at a specified time interval. If changes occur, informs the user and calculates changes in file size
+This function asynchronously reads the transferred file and displays the contents of the file to the console.
 
 
 ### Startup instructions
 ___
 
-The function **watch** provides an executable file that takes three arguments in the specific sequence shown below. Accepted Arguments
-- path to the file
-- time interval of checks
-- observation operating time
+The function **print** provides an executable file, which will take a single argument: path to file
 
 ```
-watch __fixtures__/file1.txt 500 10000
+print __fixtures__/file2.txt 
 ```
 
 ### Example of work
+
+[![asciicast](https://asciinema.org/a/PcoP4IEaPqzDGCyxnPVDwT4S1.svg)](https://asciinema.org/a/PcoP4IEaPqzDGCyxnPVDwT4S1)
 
 ## Module move
 
@@ -89,22 +90,24 @@ watch __fixtures__/file1.txt 500 10000
 
 ___
 
-This function monitors a file and tracks changes in it at a specified time interval. If changes occur, informs the user and calculates changes in file size
+:warning: **Be careful when using this module**: This module can mutate the file system (delete a file)!
+
+This function transfers data from the first transferred file to another file, and then deletes the first transferred file (from where the data is transferred)
 
 
 ### Startup instructions
 ___
 
-The function **watch** provides an executable file that takes three arguments in the specific sequence shown below. Accepted Arguments
-- path to the file
-- time interval of checks
-- observation operating time
+The function **move** takes two input arguments in the form of relative paths to files
+- output file
+- input file
 
 ```
-watch __fixtures__/file1.txt 500 10000
+move __fixtures__/file1.txt __fixtures__/file2.txt 
 ```
 
 ### Example of work
+[![asciicast](https://asciinema.org/a/5zU8tC9DTRmKEvu2KTFIDquaz.svg)](https://asciinema.org/a/5zU8tC9DTRmKEvu2KTFIDquaz)
 
 ## Module write
 
@@ -112,19 +115,21 @@ watch __fixtures__/file1.txt 500 10000
 
 ___
 
-This function monitors a file and tracks changes in it at a specified time interval. If changes occur, informs the user and calculates changes in file size
+:warning: **Be careful when using this module**: This module can mutate the file system (changing data or creating new files)!
+
+This function writes the transferred data to a file. If the file does not exist, it is created with the files already transferred.
 
 
 ### Startup instructions
 ___
 
-The function **watch** provides an executable file that takes three arguments in the specific sequence shown below. Accepted Arguments
-- path to the file
-- time interval of checks
-- observation operating time
+The function **write** takes two arguments as input in strict sequence
+- relative path to the file
+- data
 
 ```
-watch __fixtures__/file1.txt 500 10000
+write __fixtures__/file1 Hello, world!
 ```
 
 ### Example of work
+[![asciicast](https://asciinema.org/a/uoqa3uWCZeFdAcyumog30SHZ6.svg)](https://asciinema.org/a/uoqa3uWCZeFdAcyumog30SHZ6)
