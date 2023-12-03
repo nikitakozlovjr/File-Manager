@@ -157,3 +157,27 @@ reverse __fixtures__/file2.txt
 
 ### Example of work
 [![asciicast](https://asciinema.org/a/HtI1UKqeQkk33L027rTN8Lwgz.svg)](https://asciinema.org/a/HtI1UKqeQkk33L027rTN8Lwgz)
+
+## Module build
+
+### Description
+
+___
+
+:warning: **Be careful when using this module**: This module can mutate the file system (add new files)!
+
+This module checks if a file has been created and if it has not been created, creates it. The module returns "Succes!" anyway, even if the file is created
+
+
+### Startup instructions
+___
+
+The function **build** takes one single argument
+- relative path to the file
+
+```
+build __fixtures__/file1.txt
+```
+
+### Example of work
+[![asciicast](https://asciinema.org/a/ThQ5lIhDDMh1IXB50ZmBZE0bg.svg)](https://asciinema.org/a/ThQ5lIhDDMh1IXB50ZmBZE0bg)
