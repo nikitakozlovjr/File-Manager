@@ -11,7 +11,7 @@ const exchange = async (filepaths) => {
     return await Promise.all([writing1, writing2]);
 };
 
-export default (...filepaths) => {
+export default (filepaths) => {
     exchange(filepaths)
         .then(() => console.log('Succes!'))
         .catch((e) => console.log(`Error!\n${e}`));
