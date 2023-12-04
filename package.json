@@ -14,7 +14,8 @@
     "write": "bin/write.js",
     "reverse": "bin/reverse.js",
     "build": "bin/build.js",
-    "getTypes": "bin/getTypes.js"
+    "getTypes": "bin/getTypes.js",
+    "compareFilesSizes": "bin/compareFilesSizes.js"
   },
   "name": "file-manager",
   "description": "Вы можете самостоятельно протестировать работу файлового менеджера. В каталоге *src* находятся файлы js. Каждый файл - отдельная программа, решающая определенные задачи.",
