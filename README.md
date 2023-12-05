@@ -13,7 +13,10 @@ To start working with this module, clone the repository `git clone` and run the 
 
 ```
 make install
+npm link
 ```
+
+Perhaps the npm link command may require the permission of the sudo administrator
 
 ## Module getDirectorySize
 
