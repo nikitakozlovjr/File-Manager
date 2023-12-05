@@ -181,3 +181,69 @@ build __fixtures__/file1.txt
 
 ### Example of work
 [![asciicast](https://asciinema.org/a/ThQ5lIhDDMh1IXB50ZmBZE0bg.svg)](https://asciinema.org/a/ThQ5lIhDDMh1IXB50ZmBZE0bg)
+
+## Module getTypes
+
+### Description
+
+___
+
+This software module returns an array of types of passed paths. If the path is incorrect or non-existent, the function returns null.
+
+
+### Startup instructions
+___
+
+This module **getTypes** accepts an unlimited number of paths separated by a space as input
+- ... relative path to the file
+
+```
+getTypes __fixtures__/file1.txt _fixtures__/file2.txt __fixtures__/file3.txt
+```
+
+### Example of work
+[![asciicast](https://asciinema.org/a/gtvAUfNBzgxGenrjbrnIsxsob.svg)](https://asciinema.org/a/gtvAUfNBzgxGenrjbrnIsxsob)
+
+## Module compareFilesSizes
+
+### Description
+
+___
+
+This module compares the sizes of the transferred files and outputs the path to the file with the largest size to the console.
+
+
+### Startup instructions
+___
+
+This module **compareFilesSizes** accepts an unlimited number of file paths. If a directory has been passed, it is ignored.  
+- ... relative path to the file
+
+```
+compareFilesSizes __fixtures__/file1.txt _fixtures__/file2.txt __fixtures__/file3.txt
+```
+
+### Example of work
+[![asciicast](https://asciinema.org/a/0Ai1lefFTpQW3DeMrIss3uIBX.svg)](https://asciinema.org/a/0Ai1lefFTpQW3DeMrIss3uIBX)
+
+## Module exchange
+
+### Description
+
+___
+
+This module compares the sizes of the transferred files and outputs the path to the file with the largest size to the console.
+
+
+### Startup instructions
+___
+
+This module **compareFilesSizes** accepts an unlimited number of file paths. If a directory has been passed, it is ignored.  
+- ... relative path to the file
+
+```
+compareFilesSizes __fixtures__/file1.txt _fixtures__/file2.txt __fixtures__/file3.txt
+```
+
+### Example of work
+[![asciicast](https://asciinema.org/a/0Ai1lefFTpQW3DeMrIss3uIBX.svg)](https://asciinema.org/a/0Ai1lefFTpQW3DeMrIss3uIBX)
