@@ -1,3 +1,5 @@
+[![Test Coverage](https://api.codeclimate.com/v1/badges/efad13b7a35cf21ab143/test_coverage)](https://codeclimate.com/github/nikitakozlovjr/File-Manager/test_coverage)
+
 # File-Manager
 ### Description
 ____
