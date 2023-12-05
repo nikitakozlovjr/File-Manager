@@ -249,4 +249,4 @@ compareFilesSizes __fixtures__/file1.txt _fixtures__/file2.txt __fixtures__/file
 ```
 
 ### Example of work
-[![asciicast](https://asciinema.org/a/0Ai1lefFTpQW3DeMrIss3uIBX.svg)](https://asciinema.org/a/0Ai1lefFTpQW3DeMrIss3uIBX)
+[![asciicast](https://asciinema.org/a/HUp3HFfb3XZWbE2E9ZK5sYFaz.svg)](https://asciinema.org/a/HUp3HFfb3XZWbE2E9ZK5sYFaz)
